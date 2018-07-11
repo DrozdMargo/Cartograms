@@ -1,0 +1,189 @@
+.cartogram-list {
+  padding-left: 0;
+  padding-right: 0;
+  #cartogram-edit-form,
+  #all-cartograms,
+  #cartogram-create-form {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #all-cartograms {
+    overflow-y: visible;
+    overflow-x: visible;
+  }
+  .multiselect--disabled {
+    background-color: #eef2f4;
+  }
+  .multiselect {
+    min-height: 32px;
+    .multiselect__option {
+      font-size: 13px;
+      padding: 6px 10px;
+      min-height: 30px;
+    }
+    .multiselect__select {
+      height: 32px;
+      width: 25px;
+    }
+    .multiselect__select:before {
+      color: #676a6c;
+      margin-top: 4px;
+      border-style: solid;
+      border-width: 6px 3px 0;
+      border-color: #676a6c transparent transparent;
+    }
+    .multiselect__tags {
+      padding: 0 20px 0 0;
+      border-radius: 2px;
+      min-height: 32px;
+      border: 1px solid #ccc;
+      .multiselect__input, .multiselect__single {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #676a6c;
+        padding-top: 4px;
+        padding-left: 12px;
+      }
+    }
+  }
+  .form-group {
+    margin: 0 0 10px 0;
+  }
+  .control-label {
+    margin-bottom: 5px;
+  }
+
+  .left-part {
+    width: calc(63% - 10px);
+    float: left;
+    margin-right: 10px;
+  }
+  .right-part {
+    width: 37%;
+    float: left;
+  }
+  .right-part,
+  .left-part {
+    @media(max-width: 1355px) {
+      width: 100%;
+    }
+  }
+  .footer-panel {
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #fff;
+    bottom: -8px
+  }
+  .error .multiselect__tags {
+    border-color: #ff0000 !important;
+  }
+  .mx-input,
+  .multiselect .multiselect__tags,
+  .multiselect .multiselect__input,
+  .multiselect .multiselect__single {
+    background: #eef2f4;
+    border: 1px solid #eef2f4;
+    border-radius: 0;
+  }
+  .mx-input,
+  .multiselect {
+    &:focus {
+      border: none;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+  }
+
+  .cartogram-panel-list {
+    .panel-group {
+      margin-bottom: 0;
+      margin: 10px;
+    }
+    .title-list {
+      background-image: none !important;
+      margin-left: -20px;
+    }
+    color: #606060;
+    .panel-default {
+      border-top: 3px solid #fff;
+      .panel-heading {
+        padding-left: 0;
+      }
+      .panel-body {
+        padding-left: 0;
+      }
+      .collapse-toggle {
+        background-color: #eef2f4;
+        padding: 15px 15px 15px 30px;
+        background-position: 14px -20px;
+        border-left: 5px solid grey;
+        &.collapsed {
+          background: #eef2f4 url(../images/arr.png) no-repeat 98% 17px;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .cartogram-content {
+      padding: 10px !important;
+      .cartogram-content-button {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .list-item {
+    white-space: nowrap;
+    width: calc(100% - 60px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    text-align: left;
+    padding-top: 5px;
+  }
+  .list-item-row {
+    .btn {
+      margin-top: 1px;
+    }
+  }
+
+  .list-title {
+    background: #eef2f4;
+    padding: 3px 10px;
+    margin: 10px 0;
+    h2 {
+      font-size: 16px;
+      margin-top: 9px;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .btn-element {
+    border: none;
+    background-color: transparent;
+    color: #54a2dd;
+    text-transform: uppercase;
+    font-family: 'open_sansbold';
+    padding: 6px 12px;
+    font-size: 11px;
+    line-height: 1.4;
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
+  }
+
+  .mx-datepicker-popup.range {
+    div {
+      overflow: visible !important;
+    }
+  }
+}
+
